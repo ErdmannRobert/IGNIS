@@ -1,0 +1,153 @@
+This document contains not validated ideas and is not normative. Nothing in this file is guaranteed to be implemented.
+- IDEAS
+	- Rätzel
+		- Battery enclosure
+		- Caesar Cipher
+		- Combination Lock
+		- Wire cutting
+		- exchange rate
+		- Laundry
+		- Cassete
+		- Logic
+		- Maze
+		- Morse code
+		- Rotation Sequenze
+		- Ports
+		- Change a light bulb
+	- Module Ideen
+		- Kabel
+			- schneiden
+			- umstecken
+		- Batterie Fach
+			- einlegen
+			- rausnehmen
+			- umdrehen
+		- Schalter
+			- binär sequens
+		- Zahlenschloss
+			- Symbol rechnen
+			- Serialnumber
+			- Währung umrechnen
+		- Schiebe Potentiometer
+			- RGB LED
+		- Text/Symbol Eingabe
+			- Caesar Cipher
+			- Morse code
+		- Waschmaschine
+			- Waschprogramm einstellen
+		- Kassette
+			- Einlegen und Titel angeben
+			- Aufnehmen ?
+		- 1 Knopf + Leds
+			- Totmann Schalter
+			- vorgegebener Beat
+			- Skill-game
+			- morse code
+			- Totmann Schalter zu einem zufälligen Zeitpunkt
+		- 2 Knöpfe
+			- Logik
+		- Labyrinth
+		- Gyroscope
+			- Rotations sequens
+			- Kippen verboten
+			- "Wackelkontakt"
+		- Ports
+			- Tastatur
+			- Bildschirm
+			- Drucker
+			- LAN
+			- USB Stick
+		- Glühbirne
+			- Austauschen
+			- Morse code
+		- Karte swipen
+	- Module Draft
+		- Kabel
+			- Aufbau:
+				- 4x4 Stecker für Kabel rechts, links, oben und unten
+					- links und rechts fest mit Zahlen und Buchstaben beschriftet
+					- oben dynamisch mit rgb Leds
+					- unten dynamisch mit binär code / 2 leds
+				- Kabel in unterschiedlichen Farben und Widerständen
+			- Lösungen:
+				- 1 Kabel schneiden -> stecker, farben, überkreutzungen
+				- alle kabel umstecken -> stecker, farben
+		- Knopf
+			- Aufbau:
+				- Knopf mit rgb Led
+				- rgb Led Reihe
+			- Lösungen:
+				- Knopf drücken
+					- Kurz drücken
+					- Drücken und abhängig von Led Reihe los lassen
+					- Totman schalter
+		- Batterien
+			- Aufbau:
+				- Batterie Fach mit platz für
+					- 2x AA
+					- 1x 9V
+				- Lösungen:
+					- Bestimmte Anzahl an Batterien einlegen/rausnehmen/umdrehen
+		- Schalter
+			- Aufbau:
+				- 8x Hebel
+			- Lösungen:
+				- Binär sequens abhängig von vielen Parametern
+		- Matrix
+			- Aufbau:
+				- Led Matrix
+				- 4 Knöpfe
+			- Lösungen
+				- Labyrinth in der Anleitung aber unsichtbar für Entschärfer
+				- Minigames
+		- Glühbirne
+			- Aufbau:
+				- Glühbirne
+				- Knopf
+			- Lösungen:
+				- Morse code empfangen
+				- Morse code senden
+				- Birne wechseln
+		- Zahlen
+			- Aufbau:
+				- Zahlen Eingabe
+			- Lösungen:
+				- Symbole Rechnen mit Parametern der Bombe
+		- Potis
+			- Aufbau:
+				- 3 Potentiometer
+				- rgb Led
+			- Lösungen
+				- Farbe einstellen
+		- Swipen
+			- Aufbau:
+				- Schlitz zum Karte Swipen
+				- Leds
+				- Verschiedene Karten
+			- Lösungen
+				- Richtige Karte richtig herum in der richtigen Geschwindigkeit swipen
+		- Waschmaschine
+			- Aufbau:
+				- Drehregler mit Beschriftungen für Temperatur, Dauer und Programm
+				- Start/Stop Knopf
+				- Drehtrommel mit Unwucht
+			- Lösungen:
+				- Waschprogramm einstellen und starten
+		- Kassette
+			- Aufbau:
+				- Kassettenspieler
+				- Play, Stop und FF Knopf
+				- 4x Farbige Knöpfe
+			- Lösungen
+				- Richtige Kassette, Seite und Stelle auswählen und Song erkennen
+		- Symbole
+			- Aufbau:
+				- 4x Flipboard Displays mit verschiedenen Symbolen
+				- 8x Knöpfe (2 pro display)
+			- Lösungen:
+				- Cäsar Cipher
+				- Kombinationsschloss je nach Verfügbarkeit der Symbole
+				- Reihenfolge der zu drückenden Knöpfe je nach dargestellten Symbolen
+	- Parameter Draft
+		- Seriennummer -> Mini Display
+		- Ports -> Verschiedene Ports hinter klappen
