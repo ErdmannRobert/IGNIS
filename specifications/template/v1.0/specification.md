@@ -27,20 +27,22 @@ Define any terms used in this spec that could be ambiguous.
 -->
 
 **Device**  
-A self-contained functional unit within the IGNIS ecosystem. A device
-may include electronics, firmware, and mechanical components and
-interacts with other devices according to applicable IGNIS specifications.
+A self-contained functional unit within the IGNIS ecosystem. A device may include electronics, firmware, and mechanical components and interacts with other devices according to applicable IGNIS specifications.
 
 **Hub**  
-A device that acts as the central controller of an IGNIS system. The hub
-orchestrates game logic, provides environment parameters, manages user
-interaction, and coordinates communication with attached modules.
+A device that acts as the central controller of an IGNIS system. The hub orchestrates game logic, provides environment parameters, manages user interaction, and coordinates communication with attached modules.
 
 **Module**  
-A device that implements a single physical puzzle and is designed to be
-attached to a hub. A module interacts with the hub via the
-Hub-Module Connection Specification and reports its status as part of the
-overall game.
+A device that implements a single physical puzzle and is designed to be attached to a hub. A module interacts with the hub via the Hub-Module Connection Specification and reports its status as part of the overall game.
+
+**Environment parameters**
+A set of parameters that are exposed to the player and which can be changed by the hub. At the beginning of each game, the hub chooses a random value for each parameter. This mechanic should enable modules to change their correct solution depending on the environment parameters and therefore make the game replayable. 
+
+**Strikes**
+A module MAY issue strikes. The number of strikes are counted globally by the hub. When too many strikes are reached the game is lost. 
+
+**State**
+A runtime condition of a module that reflects its current role in the game. A module can only be in one state at a time. The states specified in this document describe the externally observable role of the module within the game procedure and do not need to correspond directly to the internal states used by a module’s implementation.
 
 ## 3. Dependencies
 
@@ -54,6 +56,7 @@ Compliance with the following specifications is REQUIRED:
 - hub_module_connection Specification v0.1
 -->
 
+This specification is incomplete without the specifications listed above. 
 
 ## 4. Compliance
 
@@ -61,40 +64,14 @@ Compliance with the following specifications is REQUIRED:
 What does it mean to comply with this spec? 
 -->
 
-To comply with this specification, all requirements defined in "5 Normative Requirements" MUST be satisfied.
+To comply with this specification follow the requirements defined in "5 Normative Requirements".
 
-Recommendations in "6 Recommendations" SHOULD be followed, nevertheless they are non-normative and do not affect compliance.
+Recommendations in "6 Recommendations" are non-normative and do not affect compliance. Nevertheless it is recommended to follow them for consistency. 
 
 ## 5. Normative Requirements
 
 <!--
 This is the core of the spec. These rules must be followed to comply with the specification. 
-
-Subsections of this section are optional and may be omitted or extended.
--->
-
-### Electronics  
-
-<!--
-Connector type, pinout, etc.
--->
-
-### Protocol  
-
-<!--
-Communication protocol, services, etc. 
--->
-
-### Mechanical  
-
-<!--
-Dimensions, etc.
--->
-
-### Behavioral  
-
-<!--
-Game logic, behavior of in/out devices, etc.
 -->
 
 ## 6. Recommendations (Non-Normative)
