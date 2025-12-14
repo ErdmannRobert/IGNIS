@@ -27,6 +27,22 @@ Describe what this specification defines and what is explicitly out of scope.
 Define any terms used in this spec that could be ambiguous.
 -->
 
+**Device**  
+A self-contained functional unit within the IGNIS ecosystem. A device
+may include electronics, firmware, and mechanical components and
+interacts with other devices according to applicable IGNIS specifications.
+
+**Hub**  
+A device that acts as the central controller of an IGNIS system. The hub
+orchestrates game logic, provides environment parameters, manages user
+interaction, and coordinates communication with attached modules.
+
+**Module**  
+A device that implements a single physical puzzle and is designed to be
+attached to a hub. A module interacts with the hub via the
+Hub-Module Connection Specification and reports its status as part of the
+overall game.
+
 ## 3. Dependencies
 
 <!--
@@ -35,7 +51,7 @@ Avoid circular dependencies.
 
 This specification is independent and does not rely on any other IGNIS specifications.
 
-This specification requires compliance with:
+Compliance with the following specifications is REQUIRED:
 - hub_module_connection Specification v0.1
 -->
 
