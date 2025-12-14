@@ -3,8 +3,7 @@
 ## The only purpose of this specification is to act as a template for other specifications. Other parts of the project MUST NOT comply with it. 
 
 # IGNIS – <Spec Name> Specification
-Version: <vX.Y>
-Status: Draft | Stable | Deprecated
+### Version: <vX.Y>  |  Status: Draft / Stable / Deprecated
 
 ## 0. Normative Language
 
@@ -74,25 +73,25 @@ This is the core of the spec. These rules must be followed to comply with the sp
 Subsections of this section are optional and may be omitted or extended.
 -->
 
-### 5.1 Electronics  
+### Electronics  
 
 <!--
 Connector type, pinout, etc.
 -->
 
-### 5.2 Protocol  
+### Protocol  
 
 <!--
 Communication protocol, services, etc. 
 -->
 
-### 5.3 Mechanical  
+### Mechanical  
 
 <!--
 Dimensions, etc.
 -->
 
-### 5.4 Behavioral  
+### Behavioral  
 
 <!--
 Game logic, behavior of in/out devices, etc.
