@@ -64,7 +64,7 @@ This specification is incomplete without the specifications listed above.
 What does it mean to comply with this spec? 
 -->
 
-To comply with this specification follow the requirements defined in "5 Normative Requirements".
+To comply with this specification follow the requirements defined in "5 Normative Requirements" and all specifications listed in "3 Dependencies".
 
 Recommendations in "6 Recommendations" are non-normative and do not affect compliance. Nevertheless it is recommended to follow them for consistency. 
 
