@@ -22,7 +22,7 @@ A device that acts as the central controller of an IGNIS system. The hub orchest
 A device that implements a single physical puzzle and is designed to be attached to a hub. A module interacts with the hub via the Hub-Module Connection Specification and reports its status as part of the overall game.
 
 **Environment parameters**
-A set of parameters that are exposed to the player and which can be changed by the hub. At the beginning of each game, the hub chooses a random value for each parameter. This mechanic should enable modules to change their correct solution depending on the environment parameters and therefore make the game replayable. 
+A set of random, game-instance–specific values chosen by the hub at the beginning of each game. Environment parameters are physically presented to the player and may be observed and interpreted as part of solving module riddles. Environment parameters have no intrinsic game semantics beyond their concrete values.
 
 **Strikes**
 A module MAY issue strikes. The number of strikes are counted globally by the hub. When too many strikes are reached the game is lost. 
@@ -55,13 +55,17 @@ A module MUST enter the **idle state** immediately after being supplied with pow
 
 Environment parameters are provided to modules by the hub via the Hub-Module Connection Specification and are defined by the Environment Parameters Specification.
 
-A module MUST store values of **environment parameters** when informed about them by the hub while in the **idle state**.
+A module MAY also provide its own environment parameters for the same purpose as the environment parameters provided by the hub. These internal environment parameters MUST only be used by the module that provides them. 
 
-A module MUST NOT store values of **environment parameters** when informed about them by the hub while not in the **idle state**. 
+A module MUST store values of **static environment parameters** when informed about them by the hub while in the **idle state**.
+
+A module MUST NOT store values of **static environment parameters** when informed about them by the hub while not in the **idle state**. 
+
+A module MAY ask for values of **dynamic environment parameters** at any point while not in the **idle state**.
 
 A module MUST tolerate environment parameters it does not recognize. 
 
-A module MUST tolerate not receiving environment parameters it expects. 
+A module MUST tolerate not receiving environment parameters it expects or receiving unexpected values of environment parameters. 
 
 No default values for **environment parameters** are defined by this specification. 
 

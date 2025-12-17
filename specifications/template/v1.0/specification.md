@@ -36,7 +36,7 @@ A device that acts as the central controller of an IGNIS system. The hub orchest
 A device that implements a single physical puzzle and is designed to be attached to a hub. A module interacts with the hub via the Hub-Module Connection Specification and reports its status as part of the overall game.
 
 **Environment parameters**
-A set of parameters that are exposed to the player and which can be changed by the hub. At the beginning of each game, the hub chooses a random value for each parameter. This mechanic should enable modules to change their correct solution depending on the environment parameters and therefore make the game replayable. 
+A set of random, game-instance–specific values chosen by the hub at the beginning of each game. Environment parameters are physically presented to the player and may be observed and interpreted as part of solving module riddles. Environment parameters have no intrinsic game semantics beyond their concrete values.
 
 **Strikes**
 A module MAY issue strikes. The number of strikes are counted globally by the hub. When too many strikes are reached the game is lost. 
