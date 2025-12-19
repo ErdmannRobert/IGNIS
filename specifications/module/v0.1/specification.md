@@ -100,6 +100,10 @@ the following color semantics:
 - **Continuous state**  
   The indicator MUST display **yellow**.
 
+### Mechanical & Electronics
+
+Modules MUST implement a connector to the hub as specified in the hub_module_connection specification. 
+
 ## 6. Recommendations (Non-Normative)
 
 The **visual indicator** MAY be implemented as a RGB LED. 
