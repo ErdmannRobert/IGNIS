@@ -56,13 +56,18 @@ Each environment parameter is defined by the following properties:
   - Dynamic: Values of dynamic parameters MAY change at any time during a game instance. The value of a dynamic parameter MUST NOT be inferred by its previous value. 
 
 - **Length**  
-  The number of data bytes associated with the parameter. The length MUST be at least 1 byte and MUST NOT exceed 64 bytes. 
+  The number of data bytes in the range **0-64** associated with the parameter.
 
 - **Encoding**  
   A definition of how the parameter’s bytes are to be interpreted.
 
 - **Physical Representation**  
-  A description of how the parameter’s value is intended to be presented to the player in the physical world.
+  Instructions for a physical representation of the parameter’s value. 
+
+- **Semantical Meaning**  
+  Specification on how the value of the parameter is connected to other game mechanics. 
+  This section is only included if the parameter has an inherent meaning in the game context. 
+  
 
 ### Parameter definitions:
 
