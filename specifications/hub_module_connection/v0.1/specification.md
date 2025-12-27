@@ -44,36 +44,42 @@ Recommendations in "6 Recommendations" are non-normative and do not affect compl
 
 ## 5. Normative Requirements
 
-### 
+### Electrical 
 
-- Electrical / Power
-  - Supply voltage and tolerance
-  - Max current per module
-  - Connector / Pinout
-- Communication / Protocol
-  - Physical layer -> CAN
-  - Protocol -> Cy4Net
-  - Hub ↔ Module services:
-    - Module reports solved status
-    - Hub provides environment parameters
+Hubs and modules MUST have a 6-pin connector to establish a electrical connection.
+#### pinout
+1. VCC
+2. GND
+3. CANH
+4. CANL
+5. *reserved*
+6. *reserved*
+
+- Supply voltage and tolerance
+- Max current per module
+
+### Protocol 
+
+- Physical layer -> CAN
+- Protocol -> Cy4Net
+- Hub ↔ Module services:
+  - Module reports solved status
+  - Hub provides environment parameters
 
 ## 6. Recommendations (Non-Normative)
 
-<!--
-Strong suggestions, not requirements. Should encourage consistency. 
--->
+The electrical connector MAY be realized as:
+- Micro-MaTch
+- JST-PH
+- DuPont 
 
 ## 7. Undefined and Reserved Areas
 
-<!--
-What is not defined by the specification? Where is room for future versions of the specification to evolve?
--->
+### Electrical 
+The physical connector type is intentionally undefined in this version of the specification and will be defined in a future version. The pin numbers SHOULD be labeled.  
+The pins 5 and 6 are reserved for use in future versions of the hub_module_connection specification. Therefore they MUST be treated as undefined behavior.  
 
 ### Mechanical
 The mechanical specifications for the module hub connection will follow in future versions of this specification. Preliminarily there are no mechanical constrains. 
 
 ## 8. Notes and Rationale
-
-<!--
-Explanation of design decisions. Not necessary but can be helpful. 
--->
