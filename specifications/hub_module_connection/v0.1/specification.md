@@ -67,7 +67,9 @@ Hubs and modules MUST have a 6-pin connector to establish a electrical connectio
 - Protocol -> Cy4Net
 - Hub ↔ Module services:
   - Module reports solved status
-  - Hub provides environment parameters
+  - Module reports strikes 
+  - Hub provides *Static* environment parameters at the start of the round 
+  - Modules can request *Dynamic* environment parameters at all time 
 
 ## 6. Recommendations (Non-Normative)
 
@@ -80,9 +82,12 @@ The electrical connector MAY be realized as:
 
 ### Electrical 
 The physical connector type is intentionally undefined in this version of the specification and will be defined in a future version. The pin numbers SHOULD be labeled.  
-The pins 5 and 6 are reserved for use in future versions of the hub_module_connection specification. Therefore they MUST be treated as undefined behavior.  
+The pins 5 and 6 are reserved for use in future versions of the hub_module_connection specification. Therefore they MUST be treated as undefined behavior and MUST be left floating. The supply voltage and current limits will be specified in future versions of this specification. 
 
 ### Mechanical
 The mechanical specifications for the module hub connection will follow in future versions of this specification. Preliminarily there are no mechanical constrains. 
+
+### Protocol 
+The specific services used for communication with the Cy4NET protocol over the CAN bus are not specified and will follow in future versions of this specification. 
 
 ## 8. Notes and Rationale
