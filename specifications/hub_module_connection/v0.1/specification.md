@@ -33,6 +33,9 @@ A runtime condition of a module that reflects its current role in the game. A mo
 
 Compliance with the following specifications is REQUIRED:
 - environment_parameters Specification v0.1
+  - Defines the set of environment parameters, their meaning, and their valid ranges.
+- Cy4NET v1.3
+  - https://cy4net.org/Doku/Cy4Dok.pdf
 
 This specification is incomplete without the specifications listed above. 
 

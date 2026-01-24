@@ -300,8 +300,6 @@ It MUST NOT be assumed that any value of the five fields above can be inferred f
 
 ---
 
----
-
 #### Orientation
 
 **Parameter ID:** 53
@@ -324,6 +322,28 @@ The orientation index represents the physical rotation of the bomb as follows:
 Orientation index 0: Right side up  
 Orientation index 1: Right side down  
 Orientation index 2: Sideways  
+
+--- 
+
+#### Difficulty
+
+**Parameter ID:** 54  
+**Type** Dynamic  
+**Length:** 1
+**Encoding:** 
+```
+  0  
++---+
+|DIF|
++---+
+
+[DIF] : 1 .. 3 (uint8)
+```
+**Physical Representation:**  
+A difficulty selection input labeled as *DIFFICULTY*, with three selectable options labeled as *1*, *2*, *3*.
+
+**Semantical Meaning**  
+The selected game difficulty level selected by the player. *1* ~ easy 
 
 ## 6. Recommendations (Non-Normative)
 
