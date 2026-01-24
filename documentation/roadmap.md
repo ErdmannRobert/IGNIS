@@ -6,11 +6,15 @@ IGNIS is currently in the **concept and architecture phase**.
 - Concept definition
 - Project architecture
 - Development workflow
-
-## In progress:
 - Specification drafting
 
+## In progress:
+- Electronics prototyping
+
 ## Not started:
+- Firmware prototyping 
+- Mechanical prototyping 
+- Specification stable version
 - Electronics design
 - Firmware development
 - Mechanical prototyping
